@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>10</LangVersion>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <StaticWebAssetBasePath>/</StaticWebAssetBasePath>
+    <ContentTargetFolders>.</ContentTargetFolders>
+    <Product>Umbraco.Community.SimpleContentApps</Product>
+    <PackageId>Umbraco.Community.SimpleContentApps</PackageId>
+    <Title>Umbraco.Community.SimpleContentApps</Title>
+    <Description>This packages aims to help developers quickly put together Umbraco Content Apps using C# only.</Description>
+    <PackageTags>umbraco;umbraco-marketplace</PackageTags>
+    <Authors>James Carter</Authors>
+    <Copyright>$([System.DateTime]::UtcNow.ToString(`yyyy`)) © James Carter</Copyright>
+    <PackageProjectUrl>https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps</RepositoryUrl>
+    <PackageReadmeFile>README_nuget.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>images\icon.png</PackageIcon>
+    <RootNamespace>Umbraco.Community.SimpleContentApps</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Umbraco.Cms.Web.Website" Version="10.0.0"/>
+    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="10.0.0"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" Visible="false" PackagePath="images\icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\docs\README_nuget.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ContentApps\ViewNotFound.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Dashboards\ViewNotFound.cshtml" />
+  </ItemGroup>
+</Project>

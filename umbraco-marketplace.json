@@ -1,0 +1,30 @@
+{
+  "$schema": "https://marketplace.umbraco.com/umbraco-marketplace-schema.json",
+  "AuthorDetails": {
+    "Name": "James Carter",
+    "Description": "Lead Umbraco .NET Developer, UK",
+    "Url": "https://jcdc.dev",
+    "ImageUrl": "https://github.com/jcdcdev.png"
+  },
+  "Category": "Developer Tools",
+  "Description": "This packages aims to help developers quickly put together custom Umbraco ContentApps using C# only.",
+  "LicenseTypes": [
+    "Free"
+  ],
+  "DocumentationUrl": "https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps#quick-start",
+  "IssueTrackerUrl": "https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps/issues",
+  "PackageType": "Package",
+  "Tags": [
+    "Backoffice",
+    "ContentApp",
+    "Extending",
+    "Custom ContentApp"
+  ],
+  "Title": "Umbraco.Community.SimpleContentApps",
+  "Screenshots": [
+    {
+      "ImageUrl": "https://raw.githubusercontent.com/jcdcdev/Umbraco.Community.SimpleContentApps/main/docs/screenshot.png",
+      "Caption": "A Simple ContentApp in the Content section"
+    }
+  ]
+}
