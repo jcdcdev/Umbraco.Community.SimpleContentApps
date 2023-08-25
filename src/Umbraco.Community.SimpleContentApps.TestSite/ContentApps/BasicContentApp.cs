@@ -1,4 +1,6 @@
-﻿using Umbraco.Cms.Core.Dashboards;
+﻿using jcdcdev.Umbraco.Core.AccessRule;
+using jcdcdev.Umbraco.Core.ContentApp;
+using Umbraco.Cms.Core.Dashboards;
 using Umbraco.Cms.Core.Models.ContentEditing;
 using Umbraco.Community.SimpleContentApps.Core;
 
