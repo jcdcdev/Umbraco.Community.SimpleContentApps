@@ -2,19 +2,25 @@
 
 [![Downloads](https://img.shields.io/nuget/dt/Umbraco.Community.SimpleContentApps?color=cc9900)](https://www.nuget.org/packages/Umbraco.Community.SimpleContentApps/)
 [![NuGet](https://img.shields.io/nuget/vpre/Umbraco.Community.SimpleContentApps?color=0273B3)](https://www.nuget.org/packages/Umbraco.Community.SimpleContentApps)
-[![GitHub license](https://img.shields.io/github/license/jcdcdev/Umbraco.Community.SimpleContentApps?color=8AB803)](../LICENSE)
+[![GitHub license](https://img.shields.io/github/license/jcdcdev/Umbraco.Community.SimpleContentApps?color=8AB803)](https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps/blob/main/LICENSE)
 
 This packages aims to help developers quickly put together Umbraco ContentApps using C# only.
 
+![Basic ContentApp in the Umbraco Office](https://raw.githubusercontent.com/jcdcdev/Umbraco.Community.SimpleContentApps/main/docs/screenshot.png)
+
+## Features
 - Simplifies C# based ContentApp creation
 - Supports both Views & View Components
 - No package.manifest or lang/lang.xml files required!
 - Variant support (culture specific names)
 - Easy to define Access Rules
 
-<img alt="Basic ContentApp in the Umbraco Office" src="https://raw.githubusercontent.com/jcdcdev/Umbraco.Community.SimpleContentApps/main/docs/screenshot.png" />
-
 ## Quick Start
+
+### Install Package
+```csharp
+dotnet add package Umbraco.Community.SimpleContentApps 
+```
 
 ### Register ContentApp
 
