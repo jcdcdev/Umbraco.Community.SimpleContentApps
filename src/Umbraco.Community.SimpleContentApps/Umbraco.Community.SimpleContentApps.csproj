@@ -16,7 +16,7 @@
     <Copyright>$([System.DateTime]::UtcNow.ToString(`yyyy`)) © James Carter</Copyright>
     <PackageProjectUrl>https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps</PackageProjectUrl>
     <RepositoryUrl>https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps</RepositoryUrl>
-    <PackageReadmeFile>README_nuget.md</PackageReadmeFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>images\icon.png</PackageIcon>
@@ -24,9 +24,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Umbraco.Cms.Web.Website" Version="10.0.0"/>
-    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="10.0.0"/>
-    <PackageReference Include="jcdcdev.Umbraco.Core" Version="0.1.0"/>
+    <PackageReference Include="Umbraco.Cms.Web.Website" Version="10.3.0"/>
+    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="10.3.0"/>
+    <PackageReference Include="jcdcdev.Umbraco.Core" Version="0.2.1"/>
   </ItemGroup>
 
   <ItemGroup>
