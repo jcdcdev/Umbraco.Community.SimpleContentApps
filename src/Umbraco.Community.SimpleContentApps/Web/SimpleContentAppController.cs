@@ -52,8 +52,8 @@ public class SimpleContentAppController : Controller
         {
             return PartialView(result.ViewName, model);
         }
-
-        var viewComponentName = $"{contentApp.ToFirstUpperInvariant()}ViewComponent";
+		
+        var viewComponentName = app.GetName();
         if (ViewComponentExists(viewComponentName))
         {
             return ViewComponent(viewComponentName, new { Model = model });

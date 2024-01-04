@@ -1,6 +1,5 @@
 using Umbraco.Cms.Core.Composing;
 using Umbraco.Cms.Core.DependencyInjection;
-using Umbraco.Community.SimpleContentApps.Core;
 using Umbraco.Community.SimpleContentApps.Core.Extensions;
 
 namespace Umbraco.Community.SimpleContentApps

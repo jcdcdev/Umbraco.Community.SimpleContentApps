@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
     <LangVersion>10</LangVersion>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -23,10 +23,25 @@
     <RootNamespace>Umbraco.Community.SimpleContentApps</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Umbraco.Cms.Web.Website" Version="10.3.0"/>
-    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="10.3.0"/>
-    <PackageReference Include="jcdcdev.Umbraco.Core" Version="0.2.1"/>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
+    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="[10.4.0,11.0.0)"/>
+    <PackageReference Include="Umbraco.Cms.Web.Common" Version="[10.4.0,11.0.0)"/>
+    <PackageReference Include="Umbraco.Cms.Web.Website" Version="[10.4.0,11.0.0)"/>
+    <PackageReference Include="jcdcdev.Umbraco.Core" Version="0.2.4"/>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net7.0'">
+    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="[11.0.0,13.0.0)"/>
+    <PackageReference Include="Umbraco.Cms.Web.Common" Version="[11.0.0,13.0.0)"/>
+    <PackageReference Include="Umbraco.Cms.Web.Website" Version="[11.0.0,13.0.0)"/>
+    <PackageReference Include="jcdcdev.Umbraco.Core" Version="0.2.4"/>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
+    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="[13.0.0,14.0.0)"/>
+    <PackageReference Include="Umbraco.Cms.Web.Common" Version="[13.0.0,14.0.0)"/>
+    <PackageReference Include="Umbraco.Cms.Web.Website" Version="[13.0.0,14.0.0)"/>
+    <PackageReference Include="jcdcdev.Umbraco.Core" Version="0.2.4"/>
   </ItemGroup>
 
   <ItemGroup>
@@ -35,10 +50,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Views\ContentApps\ViewNotFound.cshtml" />
+    <EmbeddedResource Include="Views\ContentApps\ViewNotFound.cshtml"/>
   </ItemGroup>
 
   <ItemGroup>
-    <_ContentIncludedByDefault Remove="Views\Dashboards\ViewNotFound.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Dashboards\ViewNotFound.cshtml"/>
   </ItemGroup>
 </Project>
