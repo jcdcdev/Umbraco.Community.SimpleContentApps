@@ -4,16 +4,8 @@ on:
     branches: "*"
   workflow_dispatch:
 jobs:
-  build_release:
-    permissions:
-      contents: write
-    uses: jcdcdev/jcdcdev.Github.UmbracoSimpleDeploy/.github/workflows/build-release-template.yml@main
+  build:
+    uses: jcdcdev/jcdcdev.Github.UmbracoSimpleDeploy/.github/workflows/build-template.yml@main
     with:
       project-name: 'Umbraco.Community.SimpleContentApps'
       project-path: './src/Umbraco.Community.SimpleContentApps/Umbraco.Community.SimpleContentApps.csproj'
-      deploy: false
-      color-primary: '#B8A3A3'
-      color-secondary: '#8C8C9E'
-      color-tertiary: '#7C8989'
-    secrets:
-      nuget-api-key: ${{ secrets.NUGET_API_KEY }}
