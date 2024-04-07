@@ -4,9 +4,10 @@ on:
     inputs:
       start-version:
         required: true
-        default: '0.0.0'
+        default: '0.1.0'
       end-version:
-        required: false
+        required: true
+        default: '999.999.999'
 jobs:
   update-releases:
     uses: jcdcdev/jcdcdev.Github.UmbracoSimpleDeploy/.github/workflows/update-all-releases.yml@main
