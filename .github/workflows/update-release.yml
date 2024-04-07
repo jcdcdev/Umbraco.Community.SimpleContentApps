@@ -1,0 +1,13 @@
+name: Update Release
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to update'
+        required: true
+        default: '0.1.0'
+jobs:
+  update-release:
+    uses: jcdcdev/jcdcdev.Github.UmbracoSimpleDeploy/.github/workflows/update-release.yml@main
+    with:
+      version: ${{ github.event.inputs.version }}
