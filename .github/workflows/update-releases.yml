@@ -1,0 +1,17 @@
+name: Update all releases
+on:
+  workflow_dispatch:
+    inputs:
+      start-version:
+        required: true
+        default: '0.0.0'
+      end-version:
+        required: false
+jobs:
+  update-releases:
+    uses: jcdcdev/jcdcdev.Github.UmbracoSimpleDeploy/.github/workflows/update-all-releases.yml@main
+    permissions:
+      contents: write
+    with:
+      start-version: ${{ inputs.start-version}}
+      end-version: ${{ inputs.end-version}}
