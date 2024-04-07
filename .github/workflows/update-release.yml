@@ -9,5 +9,7 @@ on:
 jobs:
   update-release:
     uses: jcdcdev/jcdcdev.Github.UmbracoSimpleDeploy/.github/workflows/update-release.yml@main
+    permissions:
+      contents: write
     with:
       version: ${{ github.event.inputs.version }}
