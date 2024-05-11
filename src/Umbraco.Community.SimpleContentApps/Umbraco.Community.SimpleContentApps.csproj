@@ -14,7 +14,7 @@
     <PackageTags>umbraco;umbraco-marketplace</PackageTags>
     <Authors>James Carter</Authors>
     <Copyright>$([System.DateTime]::UtcNow.ToString(`yyyy`)) © James Carter</Copyright>
-    <PackageProjectUrl>https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps</PackageProjectUrl>
+  	<PackageProjectUrl>https://jcdc.dev/umbraco-packages/simple-content-apps</PackageProjectUrl>
     <RepositoryUrl>https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps</RepositoryUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryType>git</RepositoryType>
