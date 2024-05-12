@@ -5,6 +5,7 @@ using Umbraco.Cms.Core.Dashboards;
 using Umbraco.Cms.Core.Hosting;
 using Umbraco.Cms.Core.Models;
 using Umbraco.Cms.Core.Models.ContentEditing;
+using Umbraco.Cms.Core.Models.Entities;
 using Umbraco.Cms.Core.Models.Membership;
 using Umbraco.Cms.Core.Security;
 using Umbraco.Community.SimpleContentApps.Core.Extensions;
@@ -33,8 +34,9 @@ public class SimpleContentAppFactory<T> : IContentAppFactory where T : class, IS
 
     public ContentApp? GetContentAppFor(object source, IEnumerable<IReadOnlyUserGroup> userGroups)
     {
+        var input = source as IUmbracoEntity;
         var id = 0;
-        switch (source)
+        switch (input)
         {
             case IMember member:
                 if (!_contentApp.ShowInMembers)
@@ -114,6 +116,11 @@ public class SimpleContentAppFactory<T> : IContentAppFactory where T : class, IS
         if (!language.IsNullOrWhiteSpace())
         {
             name = _contentApp.CultureName(language).IfNullOrWhiteSpace(_contentApp.Name);
+        }
+
+        if (!_contentApp.ShouldShow(input))
+        {
+            return null;
         }
 
         return new ContentApp
