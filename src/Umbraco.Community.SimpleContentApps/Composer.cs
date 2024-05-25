@@ -8,7 +8,6 @@ namespace Umbraco.Community.SimpleContentApps
     {
         public void Compose(IUmbracoBuilder builder)
         {
-            builder.ManifestFilters().Append<ManifestFilter>();
             builder.AddSimpleContentApps();
         }
     }
