@@ -1,9 +1,8 @@
 # Umbraco.Community.SimpleContentApps
 
-[![Umbraco Version](https://img.shields.io/badge/Umbraco-10.4+-%233544B1?style=flat&logo=umbraco)](https://umbraco.com/products/umbraco-cms/)
-[![NuGet](https://img.shields.io/nuget/vpre/Umbraco.Community.SimpleContentApps?color=0273B3)](https://www.nuget.org/packages/Umbraco.Community.SimpleContentApps)
-[![GitHub license](https://img.shields.io/github/license/jcdcdev/Umbraco.Community.SimpleContentApps?color=8AB803)](https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps/blob/main/LICENSE)
-[![Downloads](https://img.shields.io/nuget/dt/Umbraco.Community.SimpleContentApps?color=cc9900)](https://www.nuget.org/packages/Umbraco.Community.SimpleContentApps/)
+[![Umbraco Marketplace](https://img.shields.io/badge/Umbraco-Marketplace-%233544B1?style=flat&logo=umbraco)](https://marketplace.umbraco.com/package/umbraco.community.simplecontentapps)
+[![GitHub License](https://img.shields.io/github/license/jcdcdev/Umbraco.Community.SimpleContentApps?color=8AB803&label=License&logo=github)](https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps/blob/main/LICENSE)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/Umbraco.Community.SimpleContentApps?color=cc9900&label=Downloads&logo=nuget)](https://www.nuget.org/packages/Umbraco.Community.SimpleContentApps/)
 
 This packages aims to help developers quickly put together Umbraco ContentApps using C# only.
 
@@ -67,7 +66,7 @@ public class BasicContentApp : ISimpleContentApp
 
 ## Contributing
 
-Contributions to this package are most welcome! Please read the [Contributing Guidelines](CONTRIBUTING.md).
+Contributions to this package are most welcome! Please read the [Contributing Guidelines](https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps/blob/main/.github/CONTRIBUTING.md).
 
 ## Acknowledgments (thanks!)
 

@@ -1,59 +1,39 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
-  <PropertyGroup>
-    <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
-    <LangVersion>10</LangVersion>
-    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <StaticWebAssetBasePath>/</StaticWebAssetBasePath>
-    <ContentTargetFolders>.</ContentTargetFolders>
-    <Product>Umbraco.Community.SimpleContentApps</Product>
-    <PackageId>Umbraco.Community.SimpleContentApps</PackageId>
-    <Title>Umbraco.Community.SimpleContentApps</Title>
-    <Description>This packages aims to help developers quickly put together Umbraco Content Apps using C# only.</Description>
-    <PackageTags>umbraco;umbraco-marketplace</PackageTags>
-    <Authors>James Carter</Authors>
-    <Copyright>$([System.DateTime]::UtcNow.ToString(`yyyy`)) © James Carter</Copyright>
-  	 <PackageProjectUrl>https://jcdc.dev/umbraco-packages/simple-content-apps</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps</RepositoryUrl>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryType>git</RepositoryType>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageIcon>images\icon.png</PackageIcon>
-    <RootNamespace>Umbraco.Community.SimpleContentApps</RootNamespace>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<LangVersion>10</LangVersion>
+		<AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<StaticWebAssetBasePath>/</StaticWebAssetBasePath>
+		<ContentTargetFolders>.</ContentTargetFolders>
+		<Product>Umbraco.Community.SimpleContentApps</Product>
+		<PackageId>Umbraco.Community.SimpleContentApps</PackageId>
+		<Title>Umbraco.Community.SimpleContentApps</Title>
+		<Description>This packages aims to help developers quickly put together Umbraco Content Apps using C# only.</Description>
+		<PackageTags>umbraco;umbraco-marketplace</PackageTags>
+		<Authors>jcdcdev</Authors>
+		<Copyright>$([System.DateTime]::UtcNow.ToString(`yyyy`)) © James Carter</Copyright>
+		<PackageProjectUrl>https://jcdc.dev/umbraco-packages/simple-content-apps</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps</RepositoryUrl>
+		<PackageReadmeFile>README_nuget.md</PackageReadmeFile>
+		<RepositoryType>git</RepositoryType>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageIcon>images\icon.png</PackageIcon>
+		<RootNamespace>Umbraco.Community.SimpleContentApps</RootNamespace>
+	</PropertyGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
-    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="[10.4.0,11.0.0)"/>
-    <PackageReference Include="Umbraco.Cms.Web.Common" Version="[10.4.0,11.0.0)"/>
-    <PackageReference Include="Umbraco.Cms.Web.Website" Version="[10.4.0,11.0.0)"/>
-    <PackageReference Include="jcdcdev.Umbraco.Core" Version="0.3.1" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="[10.4.0,11.0.0)"/>
+		<PackageReference Include="Umbraco.Cms.Web.Common" Version="[10.4.0,11.0.0)"/>
+		<PackageReference Include="Umbraco.Cms.Web.Website" Version="[10.4.0,11.0.0)"/>
+		<PackageReference Include="jcdcdev.Umbraco.Core" Version="10.1.0"/>
+	</ItemGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == 'net7.0'">
-    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="[11.0.0,13.0.0)"/>
-    <PackageReference Include="Umbraco.Cms.Web.Common" Version="[11.0.0,13.0.0)"/>
-    <PackageReference Include="Umbraco.Cms.Web.Website" Version="[11.0.0,13.0.0)"/>
-    <PackageReference Include="jcdcdev.Umbraco.Core" Version="0.3.1" />
-  </ItemGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
-    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="[13.0.0,14.0.0)"/>
-    <PackageReference Include="Umbraco.Cms.Web.Common" Version="[13.0.0,14.0.0)"/>
-    <PackageReference Include="Umbraco.Cms.Web.Website" Version="[13.0.0,14.0.0)"/>
-    <PackageReference Include="jcdcdev.Umbraco.Core" Version="0.3.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="..\..\docs\icon.png" Pack="true" Visible="false" PackagePath="images\icon.png"/>
-    <None Include="..\..\.github\README.md" Pack="true" PackagePath="\"/>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Views\ContentApps\ViewNotFound.cshtml"/>
-  </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="Views\Dashboards\ViewNotFound.cshtml"/>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\docs\icon.png" Pack="true" Visible="false" PackagePath="images\icon.png"/>
+		<None Include="..\..\docs\README_nuget.md" Pack="true" PackagePath="\"/>
+		<EmbeddedResource Include="Views\ContentApps\ViewNotFound.cshtml"/>
+		<_ContentIncludedByDefault Remove="Views\Dashboards\ViewNotFound.cshtml"/>
+	</ItemGroup>
 </Project>
