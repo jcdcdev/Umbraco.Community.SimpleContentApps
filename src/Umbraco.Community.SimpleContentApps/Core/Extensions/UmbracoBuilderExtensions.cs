@@ -12,15 +12,16 @@ namespace Umbraco.Community.SimpleContentApps.Core.Extensions;
 
 public static class UmbracoBuilderExtensions
 {
-    public static SimpleContentAppCollectionBuilder Simple(this IUmbracoBuilder builder)
+    public static SimpleContentAppCollectionBuilder SimpleContentApps(this IUmbracoBuilder builder)
         => builder.WithCollectionBuilder<SimpleContentAppCollectionBuilder>();
 
     public static void AddSimpleContentApps(this IUmbracoBuilder builder)
     {
+        builder.SimpleContentApps();
         var types = builder.TypeLoader.GetTypes<ISimpleContentApp>();
         foreach (var type in types)
         {
-            builder.Simple().Append(type);
+            builder.SimpleContentApps().Append(type);
             var generic = typeof(SimpleContentAppFactory<>).MakeGenericType(type);
             builder.ContentApps().Append(generic);
         }
