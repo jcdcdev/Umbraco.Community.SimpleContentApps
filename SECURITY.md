@@ -17,6 +17,7 @@ The following table outlines the versions of the project that are currently supp
 | ---------------------------------------------------------------------------------- | ---------------  | ----------- |
 | [12.x](https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps/tree/v12) | 12 | 2024-06-29 |
 
+
 ## Future Support
 
 Project maintainers plan to support all STS (Short-Term Support) and LTS (Long-Term Support) versions of Umbraco. However, exact release dates cannot be guaranteed.
