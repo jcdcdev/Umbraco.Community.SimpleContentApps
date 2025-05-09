@@ -17,6 +17,11 @@ This packages aims to help developers quickly put together Umbraco ContentApps u
 Looking for Umbraco Workspace Views? Check out [Umbraco.Community.SimpleWorkspaceViews](https://github.com/jcdcdev/Umbraco.Community.SimpleWorkspaceViews)
 
 
+> [!IMPORTANT]
+> Version 10 will only receive security updates and no new features.
+
+> Please review the [security policy](https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps?tab=security-ov-file#supported-versions) for more information.
+
 ## Quick Start
 
 ### Install Package
