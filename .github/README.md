@@ -17,61 +17,10 @@ This packages aims to help developers quickly put together Umbraco ContentApps u
 Looking for Umbraco Workspace Views? Check out [Umbraco.Community.SimpleWorkspaceViews](https://github.com/jcdcdev/Umbraco.Community.SimpleWorkspaceViews)
 
 
-> [!IMPORTANT]
-> Version 10 will only receive security updates and no new features.
+> [!WARNING]
+> Version 10 is no longer supported and is End of Life (EOL).
 
 > Please review the [security policy](https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps?tab=security-ov-file#supported-versions) for more information.
-
-## Quick Start
-
-### Install Package
-```csharp
-dotnet add package Umbraco.Community.SimpleContentApps 
-```
-
-### Register ContentApp
-
-```csharp
-using Umbraco.Cms.Core.Dashboards;
-using Umbraco.Cms.Core.Models.ContentEditing;
-using Umbraco.Community.SimpleContentApps.Core;
-
-namespace Umbraco.Community.SimpleContentApps.TestSite;
-
-public class BasicContentApp : ISimpleContentApp
-{
-    public string Icon => Cms.Core.Constants.Icons.Content;
-    public bool ShowInContent => true;
-    public bool ShowInContentType => false;
-    public bool ShowInMedia => false;
-    public bool ShowInMembers => false;
-    public IAccessRule[] Rules => new[] { SimpleAccessRule.AllowAdminGroup };
-    public int Weight => 0;
-    public string Name => "Basic Content App";
-    public string? CultureName(string? currentUiCulture) => Name;
-    public ContentAppBadge? Badge => ContentAppBadges.None;
-}
-```
-
-### Create View
-
-- Your view **must** go in `/Views/ContentApps`
-- You view **must** be the name of your C# class (without `ContentApp`)
-  - For example: `BasicContentApp.cs` => `/Views/ContentApps/Basic.cshtml`
-
-```csharp
-@using Umbraco.Community.SimpleContentApps.Core.Extensions
-@inherits Umbraco.Community.SimpleContentApps.Web.SimpleContentAppViewPage
-
-<h1>Hello Umbraco</h1>
-<p>My ContentApp alias is: @Model.ContentApp.Alias()</p>
-```
-
-
-## Extending
-
-[docs/examples.md](https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps/blob/v13/docs/examples.md)
-
 
 ## Contributing
 
