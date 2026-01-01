@@ -22,7 +22,6 @@ Looking for Umbraco Workspace Views? Check out [Umbraco.Community.SimpleWorkspac
 
 > Please review the [security policy](https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps?tab=security-ov-file#supported-versions) for more information.
 
-
 ## Quick Start
 
 ### Install Package
@@ -67,7 +66,6 @@ public class BasicContentApp : ISimpleContentApp
 <h1>Hello Umbraco</h1>
 <p>My ContentApp alias is: @Model.ContentApp.Alias()</p>
 ```
-
 
 ## Extending
 
