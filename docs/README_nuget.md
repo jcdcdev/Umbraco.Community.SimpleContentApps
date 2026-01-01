@@ -18,12 +18,14 @@ This packages aims to help developers quickly put together Umbraco ContentApps u
 Looking for Umbraco Workspace Views? Check out [Umbraco.Community.SimpleWorkspaceViews](https://github.com/jcdcdev/Umbraco.Community.SimpleWorkspaceViews)
 
 
-## Quick Start
+## Installation
 
 ### Install Package
 ```csharp
 dotnet add package Umbraco.Community.SimpleContentApps 
 ```
+
+## Quick Start
 
 ### Register ContentApp
 
