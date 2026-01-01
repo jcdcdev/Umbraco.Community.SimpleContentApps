@@ -22,12 +22,14 @@ Looking for Umbraco Workspace Views? Check out [Umbraco.Community.SimpleWorkspac
 
 > Please review the [security policy](https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps?tab=security-ov-file#supported-versions) for more information.
 
-## Quick Start
+## Installation
 
 ### Install Package
 ```csharp
 dotnet add package Umbraco.Community.SimpleContentApps 
 ```
+
+## Quick Start
 
 ### Register ContentApp
 
