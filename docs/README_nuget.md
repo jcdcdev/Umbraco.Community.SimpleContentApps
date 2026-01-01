@@ -18,7 +18,6 @@ This packages aims to help developers quickly put together Umbraco ContentApps u
 Looking for Umbraco Workspace Views? Check out [Umbraco.Community.SimpleWorkspaceViews](https://github.com/jcdcdev/Umbraco.Community.SimpleWorkspaceViews)
 
 
-
 ## Quick Start
 
 ### Install Package
@@ -63,7 +62,6 @@ public class BasicContentApp : ISimpleContentApp
 <h1>Hello Umbraco</h1>
 <p>My ContentApp alias is: @Model.ContentApp.Alias()</p>
 ```
-
 
 ## Contributing
 
