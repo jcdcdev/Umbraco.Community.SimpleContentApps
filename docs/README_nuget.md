@@ -21,7 +21,7 @@ Looking for Umbraco Workspace Views? Check out [Umbraco.Community.SimpleWorkspac
 ## Installation
 
 ### Install Package
-```csharp
+```powershell
 dotnet add package Umbraco.Community.SimpleContentApps 
 ```
 
