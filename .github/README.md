@@ -1,5 +1,6 @@
-# Umbraco.Community.SimpleContentApps
+# Simple Content Apps
 
+[![Documentation](https://img.shields.io/badge/Documentation-123?color=394933&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjb2xvcj0id2hpdGUiIGNsYXNzPSJiaSBiaS1ib29rIiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxwYXRoIGQ9Ik0xIDIuODI4Yy44ODUtLjM3IDIuMTU0LS43NjkgMy4zODgtLjg5MyAxLjMzLS4xMzQgMi40NTguMDYzIDMuMTEyLjc1MnY5Ljc0NmMtLjkzNS0uNTMtMi4xMi0uNjAzLTMuMjEzLS40OTMtMS4xOC4xMi0yLjM3LjQ2MS0zLjI4Ny44MTF6bTcuNS0uMTQxYy42NTQtLjY4OSAxLjc4Mi0uODg2IDMuMTEyLS43NTIgMS4yMzQuMTI0IDIuNTAzLjUyMyAzLjM4OC44OTN2OS45MjNjLS45MTgtLjM1LTIuMTA3LS42OTItMy4yODctLjgxLTEuMDk0LS4xMTEtMi4yNzgtLjAzOS0zLjIxMy40OTJ6TTggMS43ODNDNy4wMTUuOTM2IDUuNTg3LjgxIDQuMjg3Ljk0Yy0xLjUxNC4xNTMtMy4wNDIuNjcyLTMuOTk0IDEuMTA1QS41LjUgMCAwIDAgMCAyLjV2MTFhLjUuNSAwIDAgMCAuNzA3LjQ1NWMuODgyLS40IDIuMzAzLS44ODEgMy42OC0xLjAyIDEuNDA5LS4xNDIgMi41OS4wODcgMy4yMjMuODc3YS41LjUgMCAwIDAgLjc4IDBjLjYzMy0uNzkgMS44MTQtMS4wMTkgMy4yMjItLjg3NyAxLjM3OC4xMzkgMi44LjYyIDMuNjgxIDEuMDJBLjUuNSAwIDAgMCAxNiAxMy41di0xMWEuNS41IDAgMCAwLS4yOTMtLjQ1NWMtLjk1Mi0uNDMzLTIuNDgtLjk1Mi0zLjk5NC0xLjEwNUMxMC40MTMuODA5IDguOTg1LjkzNiA4IDEuNzgzIi8+Cjwvc3ZnPg==)](https://docs.jcdc.dev/umbraco-community-simplecontentapps/latest)
 [![Umbraco Marketplace](https://img.shields.io/badge/Umbraco%20Marketplace-%23f5c1bc?logo=umbraco&logoColor=162335)](https://marketplace.umbraco.com/package/Umbraco.Community.SimpleContentApps)
 [![GitHub](https://img.shields.io/badge/GitHub-1?logo=github&color=232925)](https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps)
 [![NuGet Downloads](https://img.shields.io/nuget/dt/Umbraco.Community.SimpleContentApps?labelColor=4536d3&color=4536d3&label=NuGet&logo=nuget)](https://www.nuget.org/packages/Umbraco.Community.SimpleContentApps)
@@ -29,56 +30,21 @@ Looking for Umbraco Workspace Views? Check out [Umbraco.Community.SimpleWorkspac
 dotnet add package Umbraco.Community.SimpleContentApps 
 ```
 
-## Quick Start
+## Security
 
-### Register ContentApp
+> [!NOTE]
+> This project takes security and support seriously.
+> Please visit the [Security](https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps?tab=security-ov-file) page for more information.
 
-```csharp
-using Umbraco.Cms.Core.Dashboards;
-using Umbraco.Cms.Core.Models.ContentEditing;
-using Umbraco.Community.SimpleContentApps.Core;
-
-namespace Umbraco.Community.SimpleContentApps.TestSite;
-
-public class BasicContentApp : ISimpleContentApp
-{
-    public string Icon => Cms.Core.Constants.Icons.Content;
-    public bool ShowInContent => true;
-    public bool ShowInContentType => false;
-    public bool ShowInMedia => false;
-    public bool ShowInMembers => false;
-    public IAccessRule[] Rules => new[] { SimpleAccessRule.AllowAdminGroup };
-    public int Weight => 0;
-    public string Name => "Basic Content App";
-    public string? CultureName(string? currentUiCulture) => Name;
-    public ContentAppBadge? Badge => ContentAppBadges.None;
-}
-```
-
-### Create View
-
-- Your view **must** go in `/Views/ContentApps`
-- You view **must** be the name of your C# class (without `ContentApp`)
-  - For example: `BasicContentApp.cs` => `/Views/ContentApps/Basic.cshtml`
-
-```csharp
-@using Umbraco.Community.SimpleContentApps.Core.Extensions
-@inherits Umbraco.Community.SimpleContentApps.Web.SimpleContentAppViewPage
-
-<h1>Hello Umbraco</h1>
-<p>My ContentApp alias is: @Model.ContentApp.Alias()</p>
-```
-
-## Extending
-
-[docs/examples.md](https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps/blob/v13/docs/examples.md)
 
 
 ## Contributing
 
 Contributions to this package are most welcome! Please visit the [Contributing](https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps/contribute) page.
 
-## Acknowledgements (Thanks)
+## Acknowledgements
+
+Thank you to the following projects and individuals for their contributions. High five, you rock! 🤘🦄
 
 - LottePitcher - [opinionated-package-starter](https://github.com/LottePitcher/opinionated-package-starter)
 - jcdcdev - [jcdcdev.Umbraco.PackageTemplate](https://github.com/jcdcdev/jcdcdev.Umbraco.PackageTemplate)
