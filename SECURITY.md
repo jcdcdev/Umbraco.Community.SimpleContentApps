@@ -8,14 +8,14 @@ The following table outlines the versions of the project that are currently supp
 > Once a version starts its security phase, it will no longer receive feature updates. Only critical bug fixes and security updates will be provided.
 
 | Package Version                                                                            | Umbraco Version | Security Phase Start | End of Life |
-| ---------------------------------------------------------------------------------- | --------------- | -------------------- | ----------- |
-| [13.x](https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps/tree/v13) | 13 | 2025-12-14 | 2026-12-14 |
+| ---------------------------------------------------------------------------------- | --------------- | -------------------- | ----------- || [13.x](https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps/tree/v13) | 13 | 2025-12-14 | 2026-12-14 |
+
 ## Unsupported Versions
 
 | Package Version                                                               |  Umbraco Version  | End of Life |
-| ---------------------------------------------------------------------------------- | ---------------  | ----------- |
-| [10.x](https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps/tree/v10) | 10 | 2025-06-16 |
+| ---------------------------------------------------------------------------------- | ---------------  | ----------- || [10.x](https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps/tree/v10) | 10 | 2025-06-16 |
 | [12.x](https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps/tree/v12) | 12 | 2024-06-29 |
+
 
 
 ## Future Support
