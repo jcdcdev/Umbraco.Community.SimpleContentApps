@@ -10,6 +10,7 @@ The following table outlines the versions of the project that are currently supp
 | Package Version | Umbraco Version | Security Phase Start | End of Life |
 |-----------------|-----------------|----------------------|-------------|
 | [13.x](https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps/tree/v13) | 13 | 2025-12-14 | 2026-12-14 |
+| [18.x](https://github.com/jcdcdev/Umbraco.Community.SimpleContentApps/tree/v18) | 18 | 2027-03-25 | 2027-06-25 |
 
 ## Unsupported Versions
 
